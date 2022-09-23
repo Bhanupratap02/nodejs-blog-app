@@ -6,6 +6,6 @@ const passport = require("passport")
 
 router.post("/signup", userRegister)
 router.post("/login",login)
-router.get("/profile/:id",passport.authenticate("jwt", {session : false}), userProfile)
+router.get("/profile",passport.authenticate("jwt", {session : false}), userProfile)
 
 module.exports = router

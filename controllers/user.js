@@ -100,7 +100,7 @@ exports.login = async (req, res) => {
     } catch (error) {
         console.log("err in login", error)
         return res.status(500).json({
-            msg: "Server error "
+            msg: "Server error"
         })
     }
 }
